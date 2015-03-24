@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="#4655A8"
+        android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Search for any medicine"
+        android:id="@+id/editText2" />
+
+    <com.healthhelp.AutoCompleteTextViewExtended
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="like crocin"
+        android:textColor="#000"
+        android:id="@+id/autoCompleteTextView"
+        android:layout_margin="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Help"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:id="@+id/textView" />
+
+    <ViewAnimator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewAnimator"
+        android:layout_gravity="right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Search for specific help"
+            android:id="@+id/search_help_text" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/s_icon"
+            android:id="@+id/search_help_button" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I&apos;m feeling lucky!"
+        android:layout_marginTop="25dp"
+        android:id="@+id/lucky"
+        android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</LinearLayout>
